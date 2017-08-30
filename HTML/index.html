@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Paulo Roberto Elias</title>
+    <meta http-equiv="content-language" content="pt-BR">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta name="description" content="Personal Website and Portfolio. Contact hub" />
@@ -29,28 +30,6 @@
         ga('send', 'pageview');
     </script>
 
-    <!-- Google Tradutor -->
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'pt', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <!-- Google Tag Manager -->
-    <!-- <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NXC5NPF');
-    </script> -->
-    <!-- End Google Tag Manager -->
-
     <!-- GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
@@ -72,11 +51,15 @@
 
 <body id="body" data-spy="scroll" data-target=".header">
 
-    <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXC5NPF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript> -->
-    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Google Tradutor -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'pt', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!--========== HEADER ==========-->
     <header class="header navbar-fixed-top">
@@ -90,10 +73,6 @@
                             <span class="toggle-icon"></span>
                         </button>
                 </div>
-                <!-- <select name="lang_select" id="lang_select" class="dropdown-menu-left">
-                        <option value="pt">Portuguese</option>
-                        <option value="en">English</option>
-                    </select> -->
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse nav-collapse">
                     <div class="menu-container">
