@@ -29,6 +29,15 @@
         ga('send', 'pageview');
     </script>
 
+    <!-- Google Tradutor -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'pt', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <!-- Google Tag Manager -->
     <!-- <script>
         (function (w, d, s, l, i) {
@@ -89,10 +98,10 @@
                 <div class="collapse navbar-collapse nav-collapse">
                     <div class="menu-container">
                         <ul class="nav navbar-nav navbar-nav-right">
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Início</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">Sobre</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Trabalho</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contato</a></li>
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="http://blog.paulorobertoelias.com.br" target="_blank">Blog</a></li>
                         </ul>
                     </div>
@@ -111,7 +120,7 @@
                 <div class="col-sm-8 sm-margin-b-60">
                     <div class="margin-b-30">
                         <h1 class="promo-block-title">Paulo Roberto Elias</h1>
-                        <p class="promo-block-text">Analyst Developer</p>
+                        <p class="promo-block-text">Analista Desenvolvedor</p>
                     </div>
                     <ul class="list-inline">
                         <li><a href="https://www.facebook.com/pauloroberto.elias" target="_blank" class="social-icons"><i class="icon-social-facebook"></i></a></li>
@@ -145,26 +154,29 @@
                     <div class="section-seperator margin-b-20">
                         <div class="margin-b-20">
                             <div class="margin-b-20">
-                                <h2>About Me</h2>
-                                <p>Hi, my name is Paulo Roberto Elias. I've been working with IT since 2009, after leaving a
-                                    career as a civil servant to follow my vocation. I have already held several positions
-                                    in this area, but currently I am working with Web and Mobile projects since 2013. I'm
-                                    a tech enthusiast since I was a child, always learning something. I like different technologies
-                                    and I take several online courses. I am planning to take a postgraduate course in Systems
-                                    Engineering still in 2017 or 2018 and I am currently in search of new challenges, seeking
-                                    to evolve more and more in my career in information technology.</p>
-                                <p>Here you can have all my contac info and can download my CV. You can also visit my blog using
-                                    the link on the menu or clicking <a href="http://blog.paulorobertoelias.com.br" target="_blank">here</a></p>
+                                <h2>Sobre mim</h2>
+                                <p>Olá, meu nome é Paulo e trabalho diretamente com tecnologia da informação desde 2009, depois
+                                    de desistir de uma carreira como funcionário público para seguir essa minha vocação.
+                                    Bacharel em Administração de Empresas por formação, sou também pós-graduando em Engenharia
+                                    de Software. Já atuei em diversas posições diferentes, mas atualmente trabalho com análise
+                                    de requisitos em projetos Web e Mobile desde 2013. Sou um entusiasta de tecnologia desde
+                                    criança, sempre procurando aprender mais e mais. Eu gosto de diversas tecnologias, desde
+                                    programação à hardware, redes, sistemas operacionais e sou apaixonado por livros
+                                </p>
+                                <p>Aqui neste site você terá acesso à todas minhas opções de contato e pode também baixar uma
+                                    versão atualizada do meu currículo. Você é muito bem-vindo também a visitar o meu blog,
+                                    utilizando o menu ou clicando <a href="http://blog.paulorobertoelias.com.br" target="_blank">aqui</a></p>
                             </div>
-                            <a href="https://1drv.ms/w/s!Alnyo-7sjku25SafdWDnfXNXiEab" class="btn-theme btn-theme-md btn-default-bg text-uppercase">Download my CV</a>
+                            <a href="https://1drv.ms/w/s!Alnyo-7sjku25SafdWDnfXNXiEab" class="btn-theme btn-theme-md btn-default-bg text-uppercase">Download CV</a>
                         </div>
                     </div>
 
-                    <h2>My Skills</h2>
-                    <p>You can have a full list of my abilities and of the courses which I've taken on my <a href="https://www.linkedin.com/in/paulo-roberto-elias/">Linkedin</a>                        profile page.</p>
+                    <h2>Minhas habilidades</h2>
+                    <p>Você pode verificar uma lista completa das minhas habilidades e dos cursos que eu fiz no meu perfil do
+                        <a href="https://www.linkedin.com/in/paulo-roberto-elias/">Linkedin</a> profile page.</p>
                     <!-- Progress Box -->
                     <div class="progress-box">
-                        <h5>Requirements Analysis <span class="color-heading pull-right">100%</span></h5>
+                        <h5>Análise de Requisitos <span class="color-heading pull-right">100%</span></h5>
                         <div class="progress">
                             <div class="progress-bar bg-color-base" role="progressbar" data-width="100"></div>
                         </div>
@@ -217,8 +229,8 @@
         </div>
     </div>
     <!--// end row -->
-    </div>
-    </div>
+    <!-- </div>
+    </div> -->
     <!-- End About -->
 
     <!-- Work -->
@@ -226,14 +238,18 @@
         <div class="container content-lg">
             <div class="row margin-b-40">
                 <div class="col-sm-10">
-                    <h2>Latest Products</h2>
-                    <p>The vast majority of the projects I worked on are not public because I was in the service of companies.
-                        They were projects of purchases, ticket support, contract generation and maintenance, among others.
-                        Furthermore, this webiste is one of my permanent projects. It uses Bootstrap Framework, Gulp for
-                        minifying files improving performance among other technologies and is constantly improved. It features
-                        Google Analytics API as well. This website source-code is also available at Github</p>
-                    <p>The projects below have been independently developed as a freelancer. All projects feature Brazilian
-                        Portuguese as a language.</p>
+                    <h2>Portfólio</h2>
+                    <p>A maioria dos projetos em que eu trabalhei não são públicos devido ao fato de eu prestar serviços a companhias.
+                        Porém posso relatar que foram projetos relacionados à Gestão de Compras, Gestão de Tickets de TI,
+                        Geração e Manutenção de Contratos, Aplicativos móveis, APIs, entre outros. Este site é um dos meus
+                        permantentes projetos. Ele utiliza tecnologia Bootstrap para o layout responsivo, Gulp para minificação
+                        de arquivos e melhoria de performance entre outras e é constantemente atualizado. Implanta também
+                        outras tecnologias como Google Analytics, Google Translate, etc. O próprio código fonte deste site
+                        está disponível no meu perfil no Github.
+                    </p>
+                    <p>Os projetos listados abaixo foram desenvolvidos de forma independente como freelancer. Sejam para clientes
+                        ou como forma de evoluir no aprendizado da programação.
+                    </p>
                 </div>
             </div>
             <!--// end row -->
@@ -247,14 +263,16 @@
                             <img class="img-responsive" src="img/teleresponde.png" alt="Latest Products Image">
                         </div>
                     </div>
-                    <h4>Teleresponde<span class="text-uppercase margin-l-20">Mobile App</span></h4>
-                    <p>Teleresponde is a small company from my hometown that aggregates information from city partners customers
-                        with great reliability in the information. Providing phone numbers and address.</p>
-                    <p>With Android and iOS versions, the application uses Cordova technology and other Web technologies such
-                        as HTML, CSS and Javascript to query information in a Rest API and display results with the Google
-                        Maps API.</p>
-                    <p><a class="link" href="https://play.google.com/store/apps/details?id=com.n3up.teleresponde&hl=pt-BR">Download the App for Android</a></p>
-                    <p><a class="link" href="https://itunes.apple.com/us/app/teleresponde/id1199838723?mt=8">Download the App for iOS</a></p>
+                    <h4>Teleresponde<span class="text-uppercase margin-l-20">Aplicativo móvel</span></h4>
+                    <p>Teleresponde é uma pequena empresa da minha cidade natal, Piracicaba, que agrega informação de parceiros
+                        comerciais da cidade e região, com alto grau dfe confiabilidade. Provendo informações como números
+                        de contato e endereço a centenas de usuários.</p>
+                    <p>com versões para Android e iOS, o aplicativo usa tecnologia Cordova e demais tecnologias Web como HTML,
+                        CSS e Javascript para buscar informação em uma API Rest e exibir resultados, utilizando também a
+                        API do Google Maps.
+                    </p>
+                    <p><a class="link" href="https://play.google.com/store/apps/details?id=com.n3up.teleresponde&hl=pt-BR">Download do App para Android</a></p>
+                    <p><a class="link" href="https://itunes.apple.com/us/app/teleresponde/id1199838723?mt=8">Download do App para iOS</a></p>
                 </div>
                 <!-- End Latest Products -->
 
@@ -266,14 +284,15 @@
                         </div>
                     </div>
                     <h4>Chikalina<span class="text-uppercase margin-l-20">Web Application</span></h4>
-                    <p>Chikalina is the name of my wife's clothing trade. She sells clothes to people's homes. The business
-                        has existed for more than 15 years, having been raised by her mother.</p>
-                    <p>The system was developed to manage financial transactions. You should create an user and log into the
-                        system to see how it works. The passwords must have something ike this 'Abc-1234'. The performance
-                        isn't so good because I'am using a cheap hosting (same as this website), but, it was built on .Net
-                        MVC framework.
+                    <p>Chikalina é o nome do empreendimento de venda de roupas da minha esposa. Ela comercializa roupas as levando
+                        até as casas das suas clientes. O negócio em si existe há mais de 15 anos, tendo sido criado pela
+                        sua mãe que a acompanha até hoje.
                     </p>
-                    <a class="link" href="http://sistema.chikalina.com.br">Visit</a>
+                    <p>O sistema foi desenvolvido para controlar operações financeiras e no momento não está acessível pois
+                        começamos a implantar o uso e apresenta dados reais, mas logo pretendo disponibilizar o seu código-fonte
+                        no GitHub, assim como uma versão sem autenticação para demonstração.
+                    </p>
+                    <a class="link" href="http://sistema.chikalina.com.br">Visitar</a>
                 </div>
                 <!-- End Latest Products -->
 
@@ -285,13 +304,15 @@
                         </div>
                     </div>
                     <h4>Financial File Manager<span class="text-uppercase margin-l-20">Wireframe</span></h4>
-                    <p>This application is being developed to be open source (source code is available on <a href="https://github.com/PRElias/FinancialFileManager">Github</a>).
-                        It arose from a real need of a customer, for converting text files to various imports into ERP applications.</p>
-                    <p>Most of theese applications still relies on files for data transfering and it's always hard to make them
-                        fit.
+                    <p>Esta aplicação está sendo desenvolvida para ser open-source (código fonte disponível no <a href="https://github.com/PRElias/FinancialFileManager">Github</a>.
+                        Ela foi idealizada a partir da necessidade de um cliente real, de conversão de arquivos texto para
+                        diversos formatos para importação em aplicações ERP.
                     </p>
-                    <p>Work in progress</p>
-                    <a class="link" href="https://1drv.ms/b/s!Alnyo-7sjku25Gm65syBWqXdD0V8">PDF Wireframe</a>
+                    <p>A maioria dessas aplicações ainda se utiliza de transferências de dados à partir de arquivos e é sempre
+                        desafiador realizar essas integrações.
+                    </p>
+                    <p>Trabalho em progresso</p>
+                    <a class="link" href="https://1drv.ms/b/s!Alnyo-7sjku25Gm65syBWqXdD0V8">Protótipo em PDF</a>
                 </div>
                 <!-- End Latest Products -->
             </div>
@@ -303,7 +324,7 @@
     <!-- Promo Banner -->
     <div class="promo-banner parallax-window" data-parallax="scroll" data-image-src="img/02.jpg">
         <div class="container-sm content-lg">
-            <h2 class="promo-banner-title">Thanks for your visit</h2>
+            <h2 class="promo-banner-title">Obrigado pela sua visita</h2>
             <p class="promo-banner-text"></p>
         </div>
     </div>
@@ -315,23 +336,23 @@
             <div class="container content-lg">
                 <div class="row margin-b-40">
                     <div class="col-sm-6">
-                        <h2>Contact Me</h2>
-                        <p>Feel free to contact me using any of the options below:</p>
+                        <h2>Entre em contato</h2>
+                        <p>Fique à vontade para entrar em contato em qualquer uma das opções abaixo:</p>
                     </div>
                 </div>
                 <!--// end row -->
 
                 <div class="row">
                     <div class="col-md-2">
-                        <h4>Location</h4>
+                        <h4>Localização</h4>
                         Rio Claro, São Paulo, Brazil
                     </div>
                     <div class="col-md-3">
-                        <h4>Phone (Whatsapp)</h4>
+                        <h4>Celular (Whatsapp)</h4>
                         <a href="https://api.whatsapp.com/send?phone=5519981418586" target="_blank">+55 19 98141 8586</a>
                     </div>
                     <div class="col-md-3">
-                        <h4>Email</h4>
+                        <h4>E-mail</h4>
                         <a href="mailto:contato@paulorobertoelias.com" target="_top">contato@paulorobertoelias.com</a>
                     </div>
                     <div class="col-md-2">
