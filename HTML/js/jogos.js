@@ -2,24 +2,24 @@ var urlpronta = "http://paulorobertoelias.com.br/api/api/jogos/getsteamall";
 
 $.get(urlpronta, function (retorno) {
 
+    $("#div_loading").css("display", "none");
+
     var items = [];
 
     $.each(retorno.Jogos, function (key) {
         items.push(
-            "<li class='list-group-item' id='" + retorno.Jogos[key].AppId + "'>" +
-            "<img src='" + retorno.Jogos[key].ImageIconURL + "'.jpg'><br/>" +
-            "<b>" + retorno.Jogos[key].Name + "</b><br/>" +
-            "</li>"
+            (retorno.Jogos[key].ImageIconURL.substr((retorno.Jogos[key].ImageIconURL.length - 5)) != "/.jpg" ? "<a href='#' data-toggle='tooltip' title='" + retorno.Jogos[key].Name + " ***Tempo jogado: " + retorno.Jogos[key].Playtime +  "***'>" +
+            "<img src='" + retorno.Jogos[key].ImageIconURL + "'.jpg' class='estante'></a>" : "")
         );
     });
 
-    //limpa a DIV resultado
+
     $("#resultado").empty();
 
-    $("<ul/>", {
-        "class": "list-group",
+    $("<div/>", {
+        "class": "",
         html: items.join("")
     }).appendTo("#resultado");
 
-    $("#resultado").wrap("<div class='list-group' id='res_wrap'></div>");
+    
 });
