@@ -5,7 +5,7 @@
 .promo-block {
 	position: relative;
 	background: $color-sky-light;
-	padding-top: 220px;
+	padding-top: 120px;
 
 	@media (max-width: $screen-sm-min) {
 		text-align: center;
@@ -27,7 +27,7 @@
 
 	.promo-block-img-wrap {
 		@include position(relative);
-		height: 400px;
+		height: 250px;
 		
 		@media (max-width: $screen-sm-min) {
 			height: auto;
