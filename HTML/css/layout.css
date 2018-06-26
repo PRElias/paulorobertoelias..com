@@ -964,8 +964,8 @@ fieldset[disabled] .btn-theme {
 }
 
 .content-lg {
-  padding-top: 100px;
-  padding-bottom: inherit;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*------------------------------------------------------------------
@@ -1328,12 +1328,4 @@ fieldset[disabled] .btn-theme {
   .xs-text-right {
     text-align: right;
   }
-}
-
-.blink_me {
-  animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker {  
-  50% { opacity: 0; }
 }
