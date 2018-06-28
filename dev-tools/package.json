@@ -1,14 +1,13 @@
 {
-  "name": "acidus",
+  "name": "Paulo Roberto Elias",
   "version": "1.0.0",
-  "description": "HTML5 Template",
+  "description": "Personal Web Site and HTML5 template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npm i -g gulp"
   },
-  "author": "keenthemes.com",
-  "license": "ISC",
+  "author": "Paulo Roberto Elias",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-changed": "^3.2.0",
