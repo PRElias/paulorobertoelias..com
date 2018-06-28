@@ -4,7 +4,8 @@
   "description": "HTML5 Template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npm i -g gulp"
   },
   "author": "keenthemes.com",
   "license": "ISC",
