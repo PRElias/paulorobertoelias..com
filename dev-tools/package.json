@@ -1,12 +1,8 @@
 {
-  "name": "acidus",
+  "name": "paulorobertoelias",
   "version": "1.0.0",
   "description": "Personal Web Site and HTML5 template",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npm i -g gulp"
-  },
   "author": "Paulo Roberto Elias",
   "devDependencies": {
     "gulp": "^3.9.1",
