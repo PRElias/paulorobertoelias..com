@@ -12,8 +12,8 @@ var gulp 		= require('gulp'),
 	rename 		= require('gulp-rename'),
 	uglify 		= require('gulp-uglify'),
 	pump 		= require('pump'),
-	htmlhint  	= require('gulp-htmlhint');
-
+	htmlhint  	= require('gulp-htmlhint'),
+	serve 		= require('gulp-serve');
 
 // Gulp plumber error handler
 function errorLog(error) {
@@ -95,7 +95,7 @@ gulp.task('htmlhint', function() {
 // --------------------------------------------------
 
 // Lets us type "gulp" on the command line and run all of our tasks
-gulp.task('default', ['sass', 'minify-css', 'rtlcss', 'uglify', 'htmlhint', 'watch']);
+gulp.task('default', ['sass', 'minify-css', 'rtlcss', 'uglify', 'htmlhint', 'watch', 'serve']);
 
 // This handles watching and running tasks
 gulp.task('watch', function () {
@@ -105,3 +105,5 @@ gulp.task('watch', function () {
     gulp.watch('../HTML/js/**/*.js', ['uglify']);
     gulp.watch('../HTML/*.html', ['htmlhint']);
 });
+
+gulp.task('serve', serve('../HTML/'));
