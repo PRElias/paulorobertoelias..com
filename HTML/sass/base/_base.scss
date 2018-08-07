@@ -120,3 +120,13 @@ h4 { @include font($size: 22px); }
     z-index: 3;
     text-decoration: none;
 }
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
