@@ -12,7 +12,7 @@ app.getGames = function (force) {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
                 app.games = request.response;
-                localStorage.setItem("games", app.games);
+                // localStorage.setItem("games", app.games);
             }
         }
     };
