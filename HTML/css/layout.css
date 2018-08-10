@@ -199,6 +199,7 @@ h4 {
 
 .container-fluid {
   padding-left: 0px !important;
+  width: 100%;
 }
 
 .loader {

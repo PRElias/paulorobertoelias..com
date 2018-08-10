@@ -159,6 +159,7 @@ h4 { @include font($size: 22px); }
 
 .container-fluid{
     padding-left: 0px !important;
+    width: 100%;
 }
 
 .loader {
