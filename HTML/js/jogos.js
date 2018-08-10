@@ -2,7 +2,7 @@ var app = {
     isLoading: true,
     visibleCards: {},
     games: [],
-    spinner: document.querySelector('#div_loading')
+    spinner: document.querySelector('.loader')
 };
 
 app.getGames = function (force) {
@@ -31,7 +31,7 @@ app.renderizeGames = function () {
         var game = games[index];
 
         items.push(
-            "<div class='row' id='" + game.gameID + "'>" +
+            "<span id='" + game.gameID + "' class='game'>" +
             //"<p>" + game.name + "</p > " +
             "<img class='col cover' src='" + game.cover + "' alt='logo' data-toggle='modal' data-target='#myModal" + game.gameID + "' /img>" +
             "</div><div id='myModal" + game.gameID + "' class='modal fade' role='dialog'>" +
@@ -42,17 +42,19 @@ app.renderizeGames = function () {
             "</div><div class='modal-body'>" +
             "<p><small>Informações sobre o jogo</small></p>" +
             //"<button type='button' class='close' data-dismiss='modal'>Fechar</button>" +
-            "</div></div></div></div>"
+            "</div></div></div></div></span>"
         );
     }
 
-    var wrapper = document.createElement('div');
+    var wrapper = document.createElement("div");
+    wrapper.setAttribute('class', 'container-fluid');
     wrapper.innerHTML = items.join("");
 
     var main = document.querySelector('div.main_div');
     main.appendChild(wrapper);
     
 };
+
 window.onload = function(){
     app.getGames(false);
 }
