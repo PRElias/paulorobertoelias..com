@@ -180,16 +180,24 @@ h4 {
   margin-top: 120px !important;
 }
 
-.mymodal-content {
-  background-color: darkslategrey !important;
-  color: white;
-}
-
 .game {
   padding: 10px;
   margin-top: 10px;
   display: inline-block;
-  width: 200px;
+  width: 220px;
+}
+
+.cover {
+  height: 70px;
+  width: 185px;
+  box-shadow: 3px 3px 1px #333131;
+  -moz-box-shadow: 3px 3px 1px #333131;
+  -webkit-box-shadow: 3px 3px 1px #333131;
+  -khtml-box-shadow: 3px 3px 1px #333131;
+}
+
+.container-fluid {
+  padding-left: 0px !important;
 }
 
 .loader {

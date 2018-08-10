@@ -135,16 +135,29 @@ h4 { @include font($size: 22px); }
     margin-top: 120px !important;
 }
 
-.mymodal-content {
-    background-color: darkslategrey !important;
-    color: white;
-}
+// .mymodal-content {
+//     background-color: darkslategrey !important;
+//     color: white;
+// }
 
 .game{
     padding: 10px;
     margin-top: 10px;
     display:inline-block;
-    width: 200px;
+    width: 220px;
+}
+
+.cover{
+    height: 70px;
+    width: 185px;
+    box-shadow: 3px 3px 1px rgb(51, 49, 49);
+			-moz-box-shadow: 3px 3px 1px rgb(51, 49, 49);
+			-webkit-box-shadow: 3px 3px 1px rgb(51, 49, 49);
+			-khtml-box-shadow: 3px 3px 1px rgb(51, 49, 49);
+}
+
+.container-fluid{
+    padding-left: 0px !important;
 }
 
 .loader {

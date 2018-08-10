@@ -33,7 +33,7 @@ app.renderizeGames = function () {
         items.push(
             "<span id='" + game.gameID + "' class='game'>" +
             //"<p>" + game.name + "</p > " +
-            "<img class='col cover' src='" + game.cover + "' alt='logo' data-toggle='modal' data-target='#myModal" + game.gameID + "' /img>" +
+            "<img class='cover' src='" + game.cover + "' alt='logo' data-toggle='modal' data-target='#myModal" + game.gameID + "' /img>" +
             "</div><div id='myModal" + game.gameID + "' class='modal fade' role='dialog'>" +
             "<div class='modal-dialog mymodal'>" +
             "<div class='modal-content mymodal-content'>" +
