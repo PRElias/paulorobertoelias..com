@@ -180,6 +180,11 @@ h4 {
   margin-top: 120px !important;
 }
 
+.storeLogo {
+  height: 20px;
+  width: 20px;
+}
+
 .game {
   padding: 25px 10px 0px 10px;
   display: inline-block;
