@@ -32,17 +32,8 @@ app.renderizeGames = function () {
 
         items.push(
             "<span id='" + index + "' class='game'>" +
-            //"<p>" + game.name + "</p > " +
-            "<img class='cover' src='" + game.cover + "' alt='logo' data-toggle='modal' data-target='#myModal" + index + "' /img>" +
-            "</div><div id='myModal" + index + "' class='modal fade' role='dialog'>" +
-            "<div class='modal-dialog mymodal'>" +
-            "<div class='modal-content mymodal-content'>" +
-            "<div class='modal-header'>" +
-            "<h6 class='modal-title'>" + game.name + "</h6>" +
-            "</div><div class='modal-body'>" +
-            "<p><small>Informações sobre o jogo</small></p>" +
-            //"<button type='button' class='close' data-dismiss='modal'>Fechar</button>" +
-            "</div></div></div></div></span>"
+            "<img class='cover' src='" + game.cover + "' alt='logo' data-game='" + game.name + "' data-toggle='modal' data-target='#myModal' /img>" +
+            "</span>"
         );
     }
 
@@ -52,9 +43,15 @@ app.renderizeGames = function () {
 
     var main = document.querySelector('div.main_div');
     main.appendChild(wrapper);
-    
+
 };
 
-window.onload = function(){
+window.onload = function () {
     app.getGames(false);
+    $('#myModal').on('show.bs.modal', function (event) {
+        var modal = $(this)
+        var button = $(event.relatedTarget)
+        var recipient = button.data('game')
+        modal.find('.modal-title').text(recipient)
+    });
 }
