@@ -31,10 +31,10 @@ app.renderizeGames = function () {
         var game = games[index];
 
         items.push(
-            "<span id='" + game.gameID + "' class='game'>" +
+            "<span id='" + index + "' class='game'>" +
             //"<p>" + game.name + "</p > " +
-            "<img class='cover' src='" + game.cover + "' alt='logo' data-toggle='modal' data-target='#myModal" + game.gameID + "' /img>" +
-            "</div><div id='myModal" + game.gameID + "' class='modal fade' role='dialog'>" +
+            "<img class='cover' src='" + game.cover + "' alt='logo' data-toggle='modal' data-target='#myModal" + index + "' /img>" +
+            "</div><div id='myModal" + index + "' class='modal fade' role='dialog'>" +
             "<div class='modal-dialog mymodal'>" +
             "<div class='modal-content mymodal-content'>" +
             "<div class='modal-header'>" +
