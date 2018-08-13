@@ -135,6 +135,10 @@ h4 { @include font($size: 22px); }
     margin-top: 120px !important;
 }
 
+.main_div{
+    background-image: url('../../img/wooden.png');
+}
+
 .storeLogo {
     height: 20px;
     width: 20px;
@@ -150,7 +154,6 @@ h4 { @include font($size: 22px); }
     display:inline-block;
     width: 220px;
     height: 110px;
-    background-image: url('../../img/wooden.png');
 }
 
 .cover{
@@ -165,6 +168,7 @@ h4 { @include font($size: 22px); }
 .container-fluid{
     padding-left: 0px !important;
     width: 100%;
+    text-align: center;
 }
 
 .loader {
