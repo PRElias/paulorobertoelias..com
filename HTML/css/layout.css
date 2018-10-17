@@ -1454,3 +1454,8 @@ fieldset[disabled] .btn-theme {
     text-align: right;
   }
 }
+
+.img-responsive {
+  height: 250px;
+  margin: auto;
+}
