@@ -176,33 +176,9 @@ h4 {
   }
 }
 
-.mymodal {
-  margin-top: 120px !important;
-}
-
-.main_div {
-  background-image: url("../../img/wooden.png");
-}
-
-.storeLogo {
-  height: 20px;
-  width: 20px;
-}
-
-.game {
-  padding: 25px 10px 0px 10px;
-  display: inline-block;
-  width: 220px;
-  height: 110px;
-}
-
-.cover {
-  height: 70px;
-  width: 185px;
-  box-shadow: 3px 3px 1px #333131;
-  -moz-box-shadow: 3px 3px 1px #333131;
-  -webkit-box-shadow: 3px 3px 1px #333131;
-  -khtml-box-shadow: 3px 3px 1px #333131;
+.img-responsive {
+  height: 250px;
+  margin: auto;
 }
 
 .container-fluid {
@@ -1453,9 +1429,4 @@ fieldset[disabled] .btn-theme {
   .xs-text-right {
     text-align: right;
   }
-}
-
-.img-responsive {
-  height: 250px;
-  margin: auto;
 }
