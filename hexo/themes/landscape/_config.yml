@@ -1,11 +1,12 @@
 # Header
 menu:
+  paulorobertoelias.com:    https://paulorobertoelias.com
   Home: /
-  Archives: /archives
+  Arquivo: /archives
 rss: /atom.xml
 
 # Content
-excerpt_link: Read More
+excerpt_link: Continuar...
 fancybox: true
 
 # Sidebar
