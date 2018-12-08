@@ -5,7 +5,7 @@ categories:
 - Tecnologia, Projetos pessoais
 ---
 
-![](/images/mycollections-825x510.jpg)
+{% asset_img mycollections-825x510.jpg %}
 
 Hoje minha intenção não é discorrer sobre a importância e o ganho em ter projetos pessoais de desenvolvimento (programação mesmo). Até porque acredito que já falei bastante disso em meus outros posts sobre meus demais projetos e não há muito mais o que se falar disso. Portanto, minha intenção é mesmo apenas apresentar este, que chamei até aqui de “MyCollections”.
 
@@ -15,7 +15,7 @@ A ideia do projeto surgiu da minha própria dificuldade em gerir minha enorme co
 
 Há no mercado, diversos sistemas que pretendem ajudar nisso, inclusive muito mais completos, com pesquisa por código de barras (quem sabe um dia eu chego lá), entre outras funcionalidades, mas não encontrei nenhum que fizesse realmente o que eu procurava: me permitisse incluir manualmente, mas também recuperasse minha lista de jogos do Steam de forma automática.
 
-![](/images/mycollections.gif)
+{% asset_img mycollections.gif %}
 
 O código do projeto é aberto e você pode encontrá-lo aqui. Mas eu já tenho a versão dele atual funcionando, disponível em: [mycollections.paulorobertoelias.com.br](mycollections.paulorobertoelias.com.br)
 
