@@ -3,6 +3,14 @@ title: MyCollections – Projeto pessoal Open Source de controle de coleções
 date: 2018/10/18 20:46:25
 categories: 
 - Tecnologia, Projetos pessoais
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
 ---
 
 {% asset_img mycollections-825x510.jpg %}
