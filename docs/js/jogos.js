@@ -6,7 +6,7 @@ app.getGames = function (){
     debugger
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', '../../games/games.json', true);
+    xobj.open('GET', '../games/games.json', true);
     xobj.onreadystatechange = function () {
         app.games = JSON.parse(xobj.responseText);
     }
