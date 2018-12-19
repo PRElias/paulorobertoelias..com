@@ -22,18 +22,9 @@ app.renderizeGames = function (response) {
     for (var index in app.games) {
         var game = app.games[index];
         items.push(
-            "<div class='row' id='" + game.appID + "'>" +
-            //"<p>" + game.name + "</p > " +
-            "<img class='col cover' src='" + game.logoURL + "' alt='logo' data-toggle='modal' data-target='#myModal" + game.appId + "' /img>" +
-            "</div><div id='myModal" + game.appID + "' class='modal fade' role='dialog'>" +
-            "<div class='modal-dialog mymodal'>" +
-            "<div class='modal-content mymodal-content'>" +
-            "<div class='modal-header'>" +
-            "<h6 class='modal-title'>" + game.name + "</h6>" +
-            "</div><div class='modal-body'>" +
-            "<p><small>Informações sobre o jogo</small></p>" +
-            //"<button type='button' class='close' data-dismiss='modal'>Fechar</button>" +
-            "</div></div></div></div>"
+            "<span class='game col-lg-2 col-sm-6 col-md-6 col-xs-12' id='" + game.appID + "'>" +
+            "<img class='cover' src='" + game.logoURL + "' data-game='" + game.name + "' alt='logo' /img>" +
+            "</span>"
         );
     }
 
