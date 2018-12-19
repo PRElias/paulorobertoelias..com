@@ -2,29 +2,30 @@ var app = {
     games: []
 };
 
-app.getGames = function (){
-    debugger
+app.getGames = function () {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
     xobj.open('GET', '../games/games.json', true);
     xobj.onreadystatechange = function () {
-        app.games = JSON.parse(xobj.responseText);
+        if (xobj.readyState == 4 && xobj.status == "200") {
+            // .open will NOT return a value but simply returns undefined in async mode so use a callback
+            app.renderizeGames(xobj.responseText);
+        }
     }
-    console.log(app.games);
+    xobj.send(null);
 }
 
-app.renderizeGames = function () {
+app.renderizeGames = function (response) {
+    app.games = JSON.parse(response);
     var items = [];
 
-    var games = JSON.parse(app.games);
-    for (var index in games) {
-        var game = games[index];
-
+    for (var index in app.games) {
+        var game = app.games[index];
         items.push(
-            "<div class='row' id='" + game.gameID + "'>" +
+            "<div class='row' id='" + game.appID + "'>" +
             //"<p>" + game.name + "</p > " +
-            "<img class='col cover' src='" + game.cover + "' alt='logo' data-toggle='modal' data-target='#myModal" + game.gameID + "' /img>" +
-            "</div><div id='myModal" + game.gameID + "' class='modal fade' role='dialog'>" +
+            "<img class='col cover' src='" + game.logoURL + "' alt='logo' data-toggle='modal' data-target='#myModal" + game.appId + "' /img>" +
+            "</div><div id='myModal" + game.appID + "' class='modal fade' role='dialog'>" +
             "<div class='modal-dialog mymodal'>" +
             "<div class='modal-content mymodal-content'>" +
             "<div class='modal-header'>" +
@@ -41,9 +42,10 @@ app.renderizeGames = function () {
 
     var main = document.querySelector('div.main_div');
     main.appendChild(wrapper);
-    
+
 };
-window.onload = function(){
+
+window.onload = function () {
     app.getGames();
 }
 
@@ -93,7 +95,7 @@ $('#procurar').click(
 //     $("div#main_div.row.main_div").children("span").children("img").each(function () {
 //         availableTags.push($(this).attr("data-game"));
 //     });
-        
+
 //     $("#procurar").autocomplete({
 //         source: availableTags,
 //         select: function (event, ui) {
