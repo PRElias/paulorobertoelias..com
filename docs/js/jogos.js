@@ -23,7 +23,7 @@ app.renderizeGames = function (response) {
         var game = app.games[index];
         items.push(
             "<span class='game col-lg-2 col-sm-6 col-md-6 col-xs-12' id='" + game.appID + "'>" +
-            "<img class='cover' src='" + game.logoURL + "' data-game='" + game.name + "' alt='logo' /img>" +
+            "<img class='cover' src='" + game.logoURL + "' data-game='" + encodeURIComponent(game.name) + "' alt='logo' /img>" +
             "</span>"
         );
     }
@@ -81,18 +81,18 @@ $('#procurar').click(
 
 
 //Autocomplete
-// $(function () {
-//     var availableTags = [];
-//     $("div#main_div.row.main_div").children("span").children("img").each(function () {
-//         availableTags.push($(this).attr("data-game"));
-//     });
+$(function () {
+    var availableTags = [];
+    $("div#main_div.row.main_div").children("span").children("img").each(function () {
+        availableTags.push($(this).attr("data-game"));
+    });
 
-//     $("#procurar").autocomplete({
-//         source: availableTags,
-//         select: function (event, ui) {
-//             event.preventDefault();
-//             $('#procurar').val(ui.item.value);
-//             navigateToGame();
-//         }
-//     });
-// });
+    $("#procurar").autocomplete({
+        source: availableTags,
+        select: function (event, ui) {
+            event.preventDefault();
+            $('#procurar').val(ui.item.value);
+            navigateToGame();
+        }
+    });
+});

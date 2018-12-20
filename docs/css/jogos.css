@@ -112,6 +112,10 @@ html {
     display: block;
 }
 
+/* .ui-autocomplete {
+    z-index: 100;
+} */
+
 .ui-menu {
     background-color: white;
     width: 250px;
