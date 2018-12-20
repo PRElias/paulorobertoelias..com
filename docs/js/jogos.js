@@ -1,5 +1,6 @@
 var app = {
-    games: []
+    games: [],
+    availableTags: []
 };
 
 app.getGames = function () {
@@ -22,10 +23,12 @@ app.renderizeGames = function (response) {
     for (var index in app.games) {
         var game = app.games[index];
         items.push(
-            "<span class='game col-lg-2 col-sm-6 col-md-6 col-xs-12' id='" + game.appID + "'>" +
-            "<img class='cover' src='" + game.logoURL + "' data-game='" + encodeURIComponent(game.name) + "' alt='logo' /img>" +
+            "<span class='game col-lg-2 col-sm-6 col-md-6 col-xs-12' id='" + game.name + "'>" +
+            "<img class='cover' src='" + game.logoURL + "' data-game='" + game.name + "' alt='logo' /img>" +
             "</span>"
         );
+
+        app.availableTags.push(game.name);
     }
 
     var wrapper = document.createElement('div');
@@ -41,8 +44,9 @@ window.onload = function () {
 }
 
 function navigateToGame() {
-    var pesquisa = encodeURIComponent($('#procurar').val().toUpperCase());
+    var pesquisa = $('#procurar').val();
     var jogo = document.getElementById(pesquisa);
+    console.log(pesquisa);
 
     if (jogo !== null) {
         $('html, body').animate({
@@ -80,15 +84,11 @@ $('#procurar').click(
 );
 
 
+
 //Autocomplete
 $(function () {
-    var availableTags = [];
-    $("div#main_div.row.main_div").children("span").children("img").each(function () {
-        availableTags.push($(this).attr("data-game"));
-    });
-
     $("#procurar").autocomplete({
-        source: availableTags,
+        source: app.availableTags,
         select: function (event, ui) {
             event.preventDefault();
             $('#procurar').val(ui.item.value);
