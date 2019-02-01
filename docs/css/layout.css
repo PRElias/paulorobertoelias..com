@@ -405,12 +405,19 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.social-icons:hover {
-  color: #fff;
-  background: #515769;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.social-icons.facebook:hover {
+  background: lightblue;
+  color: #4267b2;
+}
+
+.social-icons.linkedin:hover {
+  background: lightblue;
+  color: #0077B5;
+}
+
+.social-icons.youtube:hover {
+  background: lightcoral;
+  color: #ED3833;
 }
 
 /*------------------------------------------------------------------

@@ -14,30 +14,24 @@
 	padding: 11px;
 	@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
-	&:hover {
-		color: $color-white;
-		background: $color-heading;
-		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	&.facebook{
+		&:hover{
+			background: lightblue;
+			color: #4267b2;
+		}
 	}
-}
 
-.fa-facebook:hover{
-	color: #4267b2;
-	background-color: white;
-}
+	&.linkedin{
+		&:hover{
+			background: lightblue;
+			color: #0077B5;
+		}
+	}
 
-.fa-twitter:hover{
-	color: #38A1F3;
-}
-
-.fa-instagram:hover{
-	color: #231F20;
-}
-
-.fa-linkedin:hover{
-	color: #0077B5;
-}
-
-.fa-youtube:hover{
-	color: #ED3833;
+	&.youtube{
+		&:hover{
+			background: lightcoral;
+			color: #ED3833;
+		}
+	}
 }
