@@ -410,14 +410,84 @@ fieldset[disabled] .btn-theme {
   color: #4267b2;
 }
 
+.social-icons.twitter:hover {
+  background: lightblue;
+  color: #4267b2;
+}
+
 .social-icons.linkedin:hover {
   background: lightblue;
   color: #0077B5;
 }
 
+.social-icons.google:hover {
+  background: lightcoral;
+  color: red;
+}
+
 .social-icons.youtube:hover {
   background: lightcoral;
   color: #ED3833;
+}
+
+.social-icons.github:hover {
+  background: #c0bebe;
+  color: black;
+}
+
+.social-icons.stack:hover {
+  background: #ecc5a4;
+  color: #f48024;
+}
+
+.social-icons.skype:hover {
+  background: lightblue;
+  color: #0077B5;
+}
+
+.social-icons.medium:hover {
+  background: #c0bebe;
+  color: black;
+}
+
+.social-icons.whatsapp:hover {
+  background: lightgreen;
+  color: green;
+}
+
+.social-icons.steam:hover {
+  background: #c0bebe;
+  color: black;
+}
+
+.social-icons.mail:hover {
+  background: lightblue;
+  color: #0077B5;
+}
+
+.social-icons.phone:hover {
+  background: lightblue;
+  color: #0077B5;
+}
+
+.social-icons.fcc:hover {
+  background: lightgreen;
+  color: darkgreen;
+}
+
+.social-icons.codersrank:hover {
+  background: #c0bebe;
+  color: black;
+}
+
+.social-icons.gitlab:hover {
+  background: #ecc5a4;
+  color: #f48024;
+}
+
+.social-icons.bitbucket:hover {
+  background: lightblue;
+  color: #0077B5;
 }
 
 /*------------------------------------------------------------------

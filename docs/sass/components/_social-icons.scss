@@ -21,6 +21,13 @@
 		}
 	}
 
+	&.twitter{
+		&:hover{
+			background: lightblue;
+			color: #4267b2;
+		}
+	}
+
 	&.linkedin{
 		&:hover{
 			background: lightblue;
@@ -28,10 +35,101 @@
 		}
 	}
 
+	&.google{
+		&:hover{
+			background: lightcoral;
+			color: red;
+		}
+	}
+
 	&.youtube{
 		&:hover{
 			background: lightcoral;
 			color: #ED3833;
+		}
+	}
+
+	&.github{
+		&:hover{
+			background: rgb(192, 190, 190);
+			color: black;
+		}
+	}
+
+	&.stack{
+		&:hover{
+			background: #ecc5a4;
+			color: #f48024;
+		}
+	}
+
+	&.skype{
+		&:hover{
+			background: lightblue;
+			color: #0077B5;
+		}
+	}
+
+	&.medium{
+		&:hover{
+			background: rgb(192, 190, 190);
+			color: black;
+		}
+	}
+
+	&.whatsapp{
+		&:hover{
+			background: lightgreen;
+			color: green;
+		}
+	}
+
+	&.steam{
+		&:hover{
+			background: rgb(192, 190, 190);
+			color: black;
+		}
+	}
+
+	&.mail{
+		&:hover{
+			background: lightblue;
+			color: #0077B5;
+		}
+	}
+
+	&.phone{
+		&:hover{
+			background: lightblue;
+			color: #0077B5;
+		}
+	}
+
+	&.fcc{
+		&:hover{
+			background: lightgreen;
+			color:darkgreen;
+		}
+	}
+
+	&.codersrank{
+		&:hover{
+			background: rgb(192, 190, 190);
+			color: black;
+		}
+	}
+
+	&.gitlab{
+		&:hover{
+			background: #ecc5a4;
+			color: #f48024;
+		}
+	}
+
+	&.bitbucket{
+		&:hover{
+			background: lightblue;
+			color: #0077B5;
 		}
 	}
 }
