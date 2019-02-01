@@ -411,12 +411,12 @@ fieldset[disabled] .btn-theme {
 }
 
 .social-icons.twitter:hover {
-  background: lightblue;
-  color: #4267b2;
+  background: #d1e2e7;
+  color: #38A1F3;
 }
 
 .social-icons.linkedin:hover {
-  background: lightblue;
+  background: #7ac2da;
   color: #0077B5;
 }
 
