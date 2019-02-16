@@ -405,12 +405,89 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.social-icons:hover {
-  color: #fff;
-  background: #515769;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.social-icons.facebook:hover {
+  background: lightblue;
+  color: #4267b2;
+}
+
+.social-icons.twitter:hover {
+  background: #d1e2e7;
+  color: #38A1F3;
+}
+
+.social-icons.linkedin:hover {
+  background: #7ac2da;
+  color: #0077B5;
+}
+
+.social-icons.google:hover {
+  background: lightcoral;
+  color: red;
+}
+
+.social-icons.youtube:hover {
+  background: lightcoral;
+  color: #ED3833;
+}
+
+.social-icons.github:hover {
+  background: #c0bebe;
+  color: black;
+}
+
+.social-icons.stack:hover {
+  background: #ecc5a4;
+  color: #f48024;
+}
+
+.social-icons.skype:hover {
+  background: lightblue;
+  color: #0077B5;
+}
+
+.social-icons.medium:hover {
+  background: #c0bebe;
+  color: black;
+}
+
+.social-icons.whatsapp:hover {
+  background: lightgreen;
+  color: green;
+}
+
+.social-icons.steam:hover {
+  background: #c0bebe;
+  color: black;
+}
+
+.social-icons.mail:hover {
+  background: lightblue;
+  color: #0077B5;
+}
+
+.social-icons.phone:hover {
+  background: lightblue;
+  color: #0077B5;
+}
+
+.social-icons.fcc:hover {
+  background: lightgreen;
+  color: darkgreen;
+}
+
+.social-icons.codersrank:hover {
+  background: #c0bebe;
+  color: black;
+}
+
+.social-icons.gitlab:hover {
+  background: #ecc5a4;
+  color: #f48024;
+}
+
+.social-icons.bitbucket:hover {
+  background: lightblue;
+  color: #0077B5;
 }
 
 /*------------------------------------------------------------------
